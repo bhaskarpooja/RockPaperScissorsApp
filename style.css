@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background:
+        linear-gradient(rgba(22, 22, 22, 0.6), rgba(22, 22, 22, 0.6)),
+        url(https://wallpaperboat.com/wp-content/uploads/2019/10/cool-website-background-02-920x518.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#round {
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+#restart {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin: 10px 0;
+    cursor: pointer;
+    background: white;
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#player {
+    margin: 15px;
+    width: 250px;
+    height: 280px;
+    border: 5px solid white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#name1,
+#name2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.score {
+    margin-top: 10px;
+    border: 3px solid white;
+    width: 60%;
+    height: 50px;
+    padding: 8px 0;
+    font-size: 22px;
+}
+
+#images {
+    padding-bottom: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#images img {
+    transition: transform 0.2s ease-in-out;
+}
+
+#images img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
+}
+
+#rock {
+    margin-top: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    #player {
+        width: 220px;
+        height: 260px;
+    }
+
+    #name1,
+    #name2 {
+        font-size: 28px;
+    }
+
+    .score {
+        font-size: 20px;
+    }
+
+    #images img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    #player {
+        width: 180px;
+        height: 240px;
+    }
+
+    #name1,
+    #name2 {
+        font-size: 24px;
+    }
+
+    .score {
+        font-size: 18px;
+    }
+
+    #images img {
+        width: 90px;
+    }
+
+    #restart {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+
+    .score {
+        width: 40%;
+        height: 35px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    #player {
+        width: 150px;
+        height: 200px;
+    }
+
+    #name1,
+    #name2 {
+        font-size: 20px;
+    }
+
+    .score {
+        width: 70%;
+        font-size: 16px;
+    }
+
+    #images img {
+        width: 80px;
+    }
+
+    #restart {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .score {
+        width: 50%;
+        height: 30px;
+        font-size: 14px;
+    }
+}
